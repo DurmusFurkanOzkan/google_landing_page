@@ -96,6 +96,11 @@ main .middle-content{
     display: inline-block;
     margin-top: 20px;
 }
+
+a:hover{
+    text-decoration: underline;
+}
+
 .middle-content img{
    width: 300px;
 }
@@ -107,21 +112,58 @@ main .middle-content{
 
 .middle-content .input-section{
     padding: 10px;
-    border: 1px solid gray;
+    border: 1px solid #ced4da;
     border-radius: 20px;
     width: 500px;
     margin: auto;
 }
 
-.input-section input{
-    width: 85%;
+.middle-content .input-section:hover,.google-bottom button:hover{
+    -webkit-box-shadow: 0px 0px 27px -8px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 27px -8px rgba(0,0,0,1);
+    box-shadow: 0px 0px 27px -8px rgba(0,0,0,1);
 }
 
-.input-section input:focus{
+.input-section input{
+    width: 85%;
     border: none;
     outline: none;
 }
 
 .input-section a{
     color: gray;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    background-color: #f0f0f0;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer__bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__top{
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding: 15px 30px;
+}
+
+.footer__bottom{
+    padding: 0 20px;
+}
+.footer p,.footer__bottom a{
+    
+    color: #70757A;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.footer__bottom a{
+    font-size: 14px;
+    padding: 15px;
 }
